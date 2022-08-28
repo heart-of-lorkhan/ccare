@@ -1,0 +1,6 @@
+mixin main-slide-content(heading, sub_heading, title, sub_title)
+    +e.content
+        +e('h1').heading #{heading} 
+        +e('h2').sub-heading #{sub_heading} 
+        +e('span').title #{title}
+        +e('span').sub-title #{sub-title}

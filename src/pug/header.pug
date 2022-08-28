@@ -1,0 +1,12 @@
+header.header#header
+  .header__inner
+    include mixins/button.pug
+    div
+      button.button.default-button(data-scrollspy="animate__fadeInLeft")
+        +svg('map-pin')
+        span New forest
+    .header__logo
+      img(src="img/logo.svg" alt="colten care logo" width="72" height="98" data-scrollspy="animate__fadeInDown").logo
+    include mixins/button.pug
+    .header__apply
+      button.button.button-primary(data-scrollto="#form" data-scrollspy="animate__fadeInRight") Apply now

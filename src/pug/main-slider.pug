@@ -1,0 +1,18 @@
+mixin main-slider()
+    .slider
+        .slider__list
+            img(src="img/01.jpeg" alt="a uniform").is-active
+            img(src="img/02.jpeg" alt="a day job")
+            img(src="img/03.jpeg" alt="a routine")
+            img(src="img/04.jpeg" alt="a possibility")
+
+        .slider__content
+            h1(data-scrollspy="animate__fadeInUp") Nursing at Colten care
+            h2(data-scrollspy="animate__fadeInUp").color-inverse-transparent It's more than <span class="slider__text"><span class="is-active">a uniform</span><span>a day job</span><span>a routine</span><span>a possibility</span></span>
+            h3(data-scrollspy="animate__fadeInUp") Join our award-winning nursing team in THE NEW FOREST AREA
+            h4(data-scrollspy="animate__fadeInUp") Join the #ColtenCollective
+            .slider__actions
+                button.button.button-primary(data-scrollto="#form").button-apply#apply Apply Now
+                button.button.button-ghost(data-scrollto="#form").button-request Request a call back
+            button(data-scrollto="#section-hiring").button-section-scroll
+                +svg('down-arrow')

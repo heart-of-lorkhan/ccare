@@ -1,0 +1,17 @@
+.logo {
+  width: 53px;
+  margin: auto;
+
+  @include tablet {
+    width: 72px;
+  }
+}
+.logo-white {
+  display: block;
+  margin: auto;
+  margin-bottom: 21px;
+
+  @include tablet {
+    margin-bottom: 25px;
+  }
+}

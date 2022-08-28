@@ -1,0 +1,268 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include tablet {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.section-form__inner {
+  max-width: 830px;
+  margin: auto;
+}
+
+.section.section-form {
+  color: $text-color-white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop-xl {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.section-form {
+  h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  
+    @include desktop-xl {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.section-form h3 {
+  letter-spacing: 0.48px;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  @include desktop-xl {
+    margin-bottom: 24px;
+  }
+}
+
+.section-form p {
+  letter-spacing: 0.48px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  @include desktop-xl {
+    margin-bottom: 50px;
+  }
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+.section-choose-us {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 52, 96, 0.7),
+      rgba(0, 52, 96, 0.7)
+    ),
+    url("../img/choose-us.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: $text-color-white;
+  background-size: cover;
+
+  h2,
+  .section-detail {
+    max-width: 821px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container {
+    max-width: 1220px;
+  }
+
+  .motto {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablet {
+      font-size: 85px;
+    }
+  }
+
+  .section-detail {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 36px;
+    text-align: center;
+
+    @include tablet {
+      margin-bottom: 84px;
+    }
+  }
+}
+
+#section-hiring {
+  position: relative;
+  top: -150px;
+
+  @include tablet {
+    top: -175px;
+  }
+}
+
+.section-hiring {
+  h2 {
+    text-align: center;
+
+    @include laptop {
+      font-size: 24px;
+      margin-bottom: 48px;
+      text-align: left;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include laptop {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  &__detail {
+    max-width: 536px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include laptop {
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    p {
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.section-values {
+  padding-top: 68px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 63px;
+    padding-bottom: 40px;
+  }
+}
+
+.h2-values {
+  color: $secondary-color;
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 43px;
+  }
+}
+
+p.values {
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  font-weight: 400;
+  max-width: 848px;
+  margin: auto;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 31px;
+  }
+}
+
+.value-list {
+  display: flex;
+  margin: 0 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @include tablet-large {
+    justify-content: space-around;
+  }
+}
+
+.value-list li {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 26px;
+}
+
+.pink {
+  color: #d8006b;
+}
+
+.green {
+  color: #89b20e;
+}
+
+.orange {
+  color: #f48100;
+}
+
+.light-blue {
+  color: #007ccb;
+}
+
+.purple {
+  color: #481c57;
+}

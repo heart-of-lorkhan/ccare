@@ -1,0 +1,28 @@
+mixin pagination
+  ul.pagination
+    li.is-hidden
+      a(href='#')
+        span <<
+    li.is-hidden
+      a(href='#')
+        span <
+    li.is-active
+      span 1
+    li
+      a(href='#') 2
+    li
+      a(href='#') 3
+    li
+      a(href='#') 4
+    li
+      a(href='#') 6
+    //- li.is-disabled
+    //-   span ...
+    //- li
+    //-   a(href='#') 20
+    li
+      a(href='#')
+        span >
+    li
+      a(href='#')
+        span >>

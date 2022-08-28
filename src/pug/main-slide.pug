@@ -1,0 +1,11 @@
+mixin main-slide( src, src_tablet, src_mobile )
+    +b.slide&attributes( attributes )
+        +e('img').image( src=`${src}` )
+
+        if src_tablet
+            +e('img').background.--tablet( src=`${src_tablet}` )
+
+        if src_mobile
+            +e('img').background.--mobile( src=`${src_mobile}` )
+
+        block

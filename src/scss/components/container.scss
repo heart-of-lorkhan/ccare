@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  padding-right: 36px;
+  padding-left: 36px;
+  margin: 0 auto;
+  max-width: 1160px;
+
+  @include desktop {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+}

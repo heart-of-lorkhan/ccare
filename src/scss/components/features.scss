@@ -1,0 +1,22 @@
+.features {
+	max-width: 400px;
+	width: 100%;
+	padding: 45px;
+	border: solid 1px $secondary-color;
+}
+
+.feature {
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		width: 25px;
+		height: 25px;
+		flex-shrink: 0;
+		margin-right: 24px;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}

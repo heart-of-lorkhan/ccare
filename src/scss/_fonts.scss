@@ -1,0 +1,28 @@
+// stylelint-disable no-empty-source
+
+@font-face {
+  font-family: "Effra";
+  src: url("../fonts/effra-regular.woff2") format("woff2"),
+    url("../fonts/effra-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Effra";
+  src: url("../fonts/effra-light.woff2") format("woff2"),
+    url("../fonts/effra-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Effra";
+  src: url("../fonts/effra-bold.woff2") format("woff2"),
+    url("../fonts/effra-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

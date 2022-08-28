@@ -1,0 +1,94 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Homepage'
+
+append vars
+  //-
+
+block content
+  include pug/main-slider.pug
+  +main-slider()
+  section.section.section-hiring
+    #section-hiring
+    .container
+      .section-hiring__detail(data-scrollspy="animate__fadeInLeft")
+        h2.color-secondary We’re hiring nurses
+        p Here at Colten Care, we understand that being a Nurse is more than just a job to you. It’s a natural calling to care, and a passion to make a difference in other people’s lives. That’s why we’re committed to supporting our Nurses in every step of their careers.  
+        p When you become a Colten Care Nurse, we’ll work hard to give you every opportunity to learn and develop new skills. You’ll have the chance to explore specialisms in long-term conditions and grow your career within a family-run organisation that truly cares about it’s staff, as well as its residents. 
+        p But that’s not all! Working for Colten Care offers you a superb range of benefits too.
+
+      ul.features(data-scrollspy="animate__fadeInRight")
+        li.feature
+          +svg('checkmark').feature__icon
+          span Up To £?? per annum
+        li.feature
+          +svg('checkmark').feature__icon
+          span £2,000 welcome bonus
+        li.feature
+          +svg('checkmark').feature__icon
+          span Paid NMC PIN renewal
+        li.feature
+          +svg('checkmark').feature__icon
+          span Refer a friend bonus
+        li.feature
+          +svg('checkmark').feature__icon
+          span Regular clinical skills updates
+
+  section.section.section-choose-us
+    .container
+      h2(data-scrollspy="animate__fadeInDown") Why choose us?
+      p.section-detail(data-scrollspy="animate__fadeInUp") Why do people choose Colten Care? It could be about the culture and environment, or perhaps its about career progression, remuneration, rewards, or achieving a ‘feel good’ factor - whatever inspires you to join us, we offer plenty of reasons to choose Colten Care.
+
+      .card-list(data-scrollspy="animate__fadeInLeft")
+        .card
+          .card__inner
+            h3 A Warm welcome
+            p It’s not just our residents and their families who receive a warm welcome at Colten Care, everyone does - including you! From your first day we will look after you, so you’ll feel comfortable and valued as a new member of a friendly team.  
+        .card
+          .card__inner
+            h3 Our care homes
+            p Each of our homes has a distinct character and feel, but is also beautifully appointed, and offers company, companionship and comfort. The moment you step into a Colten Care home you’ll be met with an atmosphere of warmth and friendliness.
+        .card
+          .card__inner
+            h3 Our promise
+            p Our collective promise, ‘Cherishing You’, is a reassuring commitment not only to our residents, but to our team too. We value everything you do, and we are committed to supporting your development and providing you with an exciting and rewarding career.
+      
+      .motto.color-inverse-transparent(data-scrollspy="animate__fadeInUp") It’s more than a profession
+
+  section.section.section-values
+    .container 
+      h2.h2-values(data-scrollspy="animate__fadeInDown") OUR VALUES
+      p.values(data-scrollspy="animate__fadeInUp") Our collective Promise, ‘Cherishing You’, is a reassuring commitment each team member makes to each resident. We can only achieve it by embedding and living our Values every single day. We distilled and identified these ideas at a large team conference ahead of extensive conversations across the entire Colten Care community. Our Promise and Values now guide all of us from the very heart of our business.
+      ul.value-list(data-scrollspy="animate__fadeInLeft")
+        li.pink Friendly 
+        li.green Kind
+        li.orange Individual
+        li.light-blue Reassuring
+        li.purple Honest
+  section.section.section-form.section-primary#form
+    .section-form__inner.container
+      div(data-scrollspy="animate__fadeInDown")
+        h2 Are you ready for more?
+        h3 Take the next step in your career, and join Colten Care today!
+        p Enter your details below and we’ll be in touch.
+
+      form(action="" method="post" data-scrollspy="animate__fadeInUp").form-cv
+        .form-input
+          input(type="text" name="name" placeholder="Name").input
+        .form-input
+          input(type="tel" name="phone" placeholder="Phone").input
+        .form-input
+          input(type="email" name="email" placeholder="Email").input
+        input(type="file" name="upload").input-upload#upload
+        label(for="upload").label-upload
+           h4.label-subtitle OPTIONAL. No CV? No Problem
+           h4.label-title Upload your CV HERE
+        .checkbox
+          input(type="checkbox" name="data-permission")#checkbox.input-checkbox
+          label(for="checkbox") I acknowledge and give permission for my data to be held by Colten Care and WeLove9am in accordance with the <a href="#">General Data Protection Regulation</a>.
+        button(type="submit" value="apply now" name="submit").button-secondary Apply now
+      img(src="img/logo-white.svg" alt="colten care logo" data-scrollspy="animate__fadeInUp").logo-white
+      .copyright(data-scrollspy="animate__fadeInUp")
+        | All Rights Reserved. &copy;WeLove9am 2021
